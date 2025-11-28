@@ -12,7 +12,7 @@ pinned: false
 # Linear Search Algorithm Simulator
 
 ## Demo Video / GIF / Screenshot
-*(Insert your Hugging Face screenshot or GIF here once your Space is deployed)*
+https://cdn-uploads.huggingface.co/production/uploads/6928cb029054d07947ebffc6/P-U8MuN7ccZIeVeBoIvpE.qt
 
 ---
 
@@ -61,7 +61,7 @@ The app will launch automatically and show a URL
 ---
 
 ## Hugging Face Link
-*(Add after deployment — e.g., https://huggingface.co/spaces/yourname/Linear-Search-Simulator)*
+https://huggingface.co/spaces/s16507alex/CISC121-Project
 
 ---
 
