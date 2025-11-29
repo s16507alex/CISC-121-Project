@@ -73,6 +73,7 @@ https://cdn-uploads.huggingface.co/production/uploads/6928cb029054d07947ebffc6/P
 ## Problem Breakdown & Computational Thinking
 
 ### Flowchart of the Algorithm
+<img width="292" height="655" alt="Screenshot 2025-11-28 at 21 20 44" src="https://github.com/user-attachments/assets/7fbc0f06-d99c-41df-8088-20c80e403c93" />
 
 
 ---
@@ -101,7 +102,7 @@ Testing / Logging module
 #### **2. Pattern Recognition**
 - Each loop iteration performs the same three actions: read arr[i], compare it to target, append a step message. This repetition is the basis of linear search and suggests that a simple for loop is the correct structure.
 - After each check, the “remaining list” is arr[i+1:], this transforms the global list perception into a sliding window that always advances by 1. Recognizing this pattern gives a single expression for the remaining list rather than increasing manually.
-- If arr[i] == target, the loop terminates early. Pattern recognition shows many inputs will be found early in best-case, so early exit preserves efficiency.
+- If arr[i] == target, the loop terminates early. Pattern recognition shows many inputs will be found early in best case, so early exit preserves efficiency.
 - The guess-checking pattern is a simple equality check guess == found_index and only interacts with score on the single success pattern. This isolates side effects to one clear condition.
 
 These patterns justify the chosen control flow and the decision to keep gamification logic separate from the core loop. 
@@ -139,7 +140,7 @@ Loop invariant: Before each iteration i, all elements at indices 0..i-1 have bee
 
 Initialization: before i=0, zero elements checked, invariant holds meaninglessly.
 
-Maintenance: at iteration i, check arr[i]; if it equals the target we return (correct), otherwise the invariant holds for the next iteration i+1 because arr[i] has been proven not equal.
+Maintenance: at iteration i, check arr[i]; if it equals the target return correct, otherwise the invariant holds for the next iteration i+1 because arr[i] has been proven not equal.
 
 Termination: if loop ends with no returns, all indices 0..n-1 have been checked and none matched, conclude that target is not present.
 
